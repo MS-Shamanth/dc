@@ -40,11 +40,3 @@ print("\nMost similar words to 'word':")
 for similar_word, similarity in similar_words:
     print(f"{similar_word}: {similarity:.4f}")
 
-words = ["natural", "language", "processing"]
-
-embeddings = np.array([model.wv[word] for word in words])
-
-print("\nEmbeddings for words:")
-
-for word, embedding in zip(words, embeddings):
-    print(f"{word}: {embedding}")
